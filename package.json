@@ -16,18 +16,14 @@
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
-  "files": [
-    "index.js",
-    "icon.png",
-    "info.plist"
-  ],
   "keywords": [
     "alfred",
     "workflow",
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.10.0"
+    "alfy": "^0.10.0",
+    "execa": "^5.0.0"
   },
   "devDependencies": {
     "alfy-test": "^0.4.0",
