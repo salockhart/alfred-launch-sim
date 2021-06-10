@@ -5,7 +5,7 @@ const emulatorCommand = process.env.ANDROID_HOME
   ? `${process.env.ANDROID_HOME}/emulator/emulator`
   : "emulator";
 
-const cp = execa(emulatorCommand, [`@${alfy.input}`], {
+const cp = execa(emulatorCommand, [`@${alfy.input}`, "-no-snapshot"], {
   detached: true,
   stdio: "ignore",
 });
